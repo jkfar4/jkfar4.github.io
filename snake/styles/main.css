@@ -1,0 +1,112 @@
+ body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+        }
+
+        footer {
+            padding-left: 20px;
+            font-size: 12px;
+        }
+
+        canvas {
+            background: #d3ff5e;
+            display: block;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        #score {
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+        div#screen hr {
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            margin-bottom: 2px;
+            margin-top: 0;
+            border: none;
+        }
+
+        #game-area {
+            width: auto;
+            height: fit-content;
+            background-color: black;
+            padding: 10px 0;
+        }
+        #game-area div{
+            margin: 0 auto;
+        }
+
+        #screen {
+            width: fit-content;
+            height: auto;
+            background-color: #d3ff5e;
+            padding: 10px 10px;
+        }
+
+        #game-info {
+            /**Defining a flexbox container*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: fit-content;
+        }
+
+        .game-info-item {
+            /*We are giving each flex item the same value. 
+            Therefore, the flex items will occupy an equal amount of space */
+            flex: 1;
+            
+        }
+        .block {
+            position: relative;
+            overflow: hidden;
+            z-index: -2;
+        }
+        #control-block::before, #to-do-block::before  {
+            content: "";
+            position: absolute;
+            top: -85px;
+            left: -95px;
+            width: 256px;
+            height: 256px;
+            opacity: 0.7;
+            z-index: -1;
+        }
+
+         #control-block::before{
+            background-image: url("../images/joystick_256.png");
+            background-repeat: no-repeat;
+            transform: rotate(-45deg);
+        }
+        #to-do-block::before{
+            background-image: url("../images/checklist.png");
+            background-repeat: no-repeat;
+            transform: rotate(-45deg);
+        }
+         #control-block {
+            text-align: center;
+            background: linear-gradient(135deg, #E91E63, #ffffff, #ffffff);
+        }
+
+        #to-do-block {
+            text-align: center;
+            background: linear-gradient(135deg, #484ddc, #ffffff, #ffffff);
+        }
+        .block ul img {
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+        }
+        

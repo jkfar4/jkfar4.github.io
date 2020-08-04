@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <script src="scripts/food.js" defer></script>
+    <script src="scripts/snakecanvas.js" defer></script>
+    <script src="scripts/snake.js" defer></script>
+    <script src="scripts/segments.js" defer></script>
+    <script src="scripts/draw.js" defer></script>
+    <script src="scripts/control.js" defer></script>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <main>
+        <section id="game-area">
+            <div id="screen">
+                <span id="score">0000</span>
+                <hr>
+                <canvas id="myCanvas" width="300" height="300"></canvas>
+            </div>
+        </section>
+        <section id="game-info">
+            <div id="control-block" class="block game-info-item">
+                <h2>Controls</h2>
+                <ul>
+                    <li><img src="images/up-arrow-key.svg" alt="up arrow key" loading="lazy"> Up</li>
+                    <li><img src="images/down-arrow-key.svg" alt="down arrow key" loading="lazy"> Down</li>
+                    <li><img src="images/left-arrow-key.svg" alt="left arrow key" loading="lazy"> Left</li>
+                    <li><img src="images/right-arrow-key.svg" alt="right arrow key" loading="lazy"> Right</li>
+                </ul>
+            </div>
+            <div id="to-do-block" class="block game-info-item">
+                <h2>Development Progress</h2>
+                <ul>
+                    <li><img src="images/check.svg" alt="checkmark" loading="lazy"> Game Loop implemented</li>
+                    <li><img src="images/check.svg" alt="checkmark" loading="lazy"> Snake moves left, right, up or down</li>
+                    <li><img src="images/check.svg" alt="checkmark" loading="lazy"> Snake grows</li>
+                    <li><img src="images/check.svg" alt="checkmark" loading="lazy"> Wall collision detection</li>
+                    <li><img src="images/check.svg" alt="checkmark" loading="lazy"> Food collision detection</li>
+                    <li><img src="images/check.svg" alt="checkmark" loading="lazy"> OO implementation</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>Attribution</h4>
+        <ul>
+            <li>
+                Joystick made by <a href="https://smashicons.com/" title="Smashicons" target="_blank" rel="noopener noreferrer">Smashicons</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon" target="_blank" rel="noopener noreferrer">
+                    www.flaticon.com</a>
+            </li>
+            <li>Arrow Keys made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blank"
+                    rel="noopener noreferrer">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank"
+                    rel="noopener noreferrer"> www.flaticon.com</a></li>
+
+            <li>Checklist made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blank"
+                    rel="noopener noreferrer">Freepik</a>
+                from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank" rel="noopener noreferrer"> www.flaticon.com</a></li>
+
+            <li>Green tick made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blank"
+                    rel="noopener noreferrer">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank"
+                    rel="noopener noreferrer"> www.flaticon.com</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
