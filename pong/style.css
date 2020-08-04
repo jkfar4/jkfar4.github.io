@@ -17,6 +17,7 @@ svg {
     background-color: black;
     border: 3px white solid;
     cursor: none;
+    margin-top: 20px;
 }
 body {
     background-color: black;
