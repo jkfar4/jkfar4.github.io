@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script src="svgelement.js" defer></script>
+    <script src="observable.js" defer></script>
+    <script src="pong.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <svg id="canvas" width="600" height="600">
+            <text id="computerScore" x="150" y="50" fill="white" style="font-family: Orbitron ;font-size:50px">0</text>
+            <text id="playerScore" x="400" y="50" fill="white" style="font-family: Orbitron ;font-size:50px">0</text>
+            <line x1="300" y1="0" x2="300" y2="600" stroke="white" stroke-dasharray="10 30"></line>
+
+            <text id="alertPlayerText" x="390" y="500" fill="white" style="font-family: Orbitron ;font-size:30px"></text>
+            <text id="alertPlayerWinnerText" x="365" y="550" fill="white" style="font-family: Orbitron ;font-size:50px;letter-spacing: 3"></text>
+
+            <text id="alertComputerText" x="70" y="500" fill="white" style="font-family: Orbitron ;font-size:30px"></text>
+            <text id="alertComputerWinnerText" x="70" y="550" fill="white" style="font-family: Orbitron ;font-size:50px;letter-spacing: 3"></text>
+        </svg>
+    </section>
+</body>
+
+</html>
