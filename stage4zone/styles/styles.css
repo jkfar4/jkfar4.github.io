@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#mapid {
+    width: 100vw;
+    height: 92vh;
+}
+input#addressField{
+    font-size: large;
+    width: 100vw;
+    height: 8vh;
+}
